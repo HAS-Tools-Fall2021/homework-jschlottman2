@@ -15,7 +15,7 @@
   - What type of values is it composed of?
 #The values composing the array can actually be formed by several types of variables. These can be any kind of variable such as integers, floats, or even boolean expressions! that fall under the array as they can be made as large or small as we choose to make them. In this array I believe the variables 'year', 'month','day' are all simply integers while 'flow' is a float.
  - What is are its dimensions, and total size?
-# The dimensions of this array are found by using the function "numpy.flow_data : ndim". Then we can use a len() command to return the length of the variable which is returned from the first command. From this we see there are 
+# The dimensions of this array are found by using the function "numpy.flow_data : ndim". 
 
 #3. How many times was the daily flow greater than your prediction in the month of September (express your answer in terms of the total number of times and as a percentage)?
 
