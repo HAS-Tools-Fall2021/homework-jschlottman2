@@ -2,6 +2,14 @@
 
 *Schlottman_HW4.md*
 
+## Grade
+**1/3: This is a good start but it seems like you are missing most of the assignment here. I will give you until next Tuesday to re-submit. make sure to come to my office hours in advance next time if you have questions. 
+
+- Your markdown formatting is not working because you are missing spaces after your formatting codes. Make sure you preview your markdown before submitting it. 
+- for your summary I'm not really looking for a summary of what the assignment was asking you to do I'm asking for a summary of how you specifically picked your flow values. For example something like:  *I predict 90cf and 85cfs based on the fact that the long term average flows for september are xxx and I from my histogram analysis I have seen declining flows over the month of september etc etc...* Note that I ask in the instructions for at least two histograms and a discussion of flow quantiles in your answer
+- For the rest of your answers in most cases you are missing the actual solution and just talking about how somthing might be done or not answering at all. 
+_______
+
 #Summary:
 #This week the basis for analyzing the streamflow values relies on utilizing data in the provided python starter code focuses on attaining data from the numpy arrays rather than lists like we depended on previously. Now we can take advantage of defined arrays which allow for easier manipulation and conditional statements allow for easy calculations without having to write a ton of lists and extra code. Alongside conditional statements, we may use any type of mathematical operation as long as it is included in the provided numpy array called "*flow_data*" to calculate the necessary mathematical operations and form reasonable estimates for the 1-week and 2-week forecast values representing our estimates for the flow (cfs).
 

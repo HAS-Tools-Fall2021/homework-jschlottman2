@@ -2,6 +2,11 @@
 
 *Schlottman_HW3.md*
 
+## Grade
+**1/3: It looks liek you are missing answers to all the quantitaive questions and I don't see a python script submitted here. I will give you one more extension until this Friday to get this one completed make sure you come see me if you have questions. Also see my comments on assignment 4 for additional notes on what I'm looking for. 
+_______
+
+
 To make reasonable forecast estimates I made changes to the provided .py starter code and simply added elements to the lists found in the code in order to return values and make comparable estimates for my 1 and 2 week predictions for the forecasting of the stream discharge values in cubic feet per second (cfs).
 Note: only the variables: "min,max,mean, std. dev" were calculated for the sake of simplicity.
 
