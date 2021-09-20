@@ -1,19 +1,21 @@
-# Starter code for Homework 4
+# Assignment_4: numpy Arrays
+#Jason Schlottman
+#Date: 9/14/2021
+
+# > HW4 file based on the provided 'Starter code for Homework 4' supplied by Dr. Condon:
 
 # %%
 # Import the modules we will use
 import os
 import numpy as np
-from numpy.core.fromnumeric import ndim, shape, size
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # %%
 # ** MODIFY **
 # Set the file name and path to where you have stored the data
-#path="C:\Users\jschl\OneDrive\Documents\HAS_Tools\homework-jschlottman2\data\streamflow_week4.txt"
 filename = 'streamflow_week4.txt'
-filepath = os.path.join('C:\Users\jschl\OneDrive\Documents\HAS_Tools\homework-jschlottman2\data/', filename)
+filepath = os.path.join('../data', filename)
 print(os.getcwd())
 print(filepath)
 
@@ -41,15 +43,9 @@ flow_data = data[['year', 'month','day', 'flow']].to_numpy()
 del(data)
 
 # %%
+
 # Starter Code:
 # Start making your changes here. 
-
-#numpy dimensions:
-numpy.flow_data
-np.flow_data: ndim
-np.flow_data: shape
-np.flow_data: size
-np.flow_data: len()
 
 #NOTE: You will be working with the numpy array 'flow_data'
 # Flow data has a row for every day and 4 columns:
@@ -58,6 +54,7 @@ np.flow_data: len()
 # 3. Day of the month
 # 4. Flow value in CFS
 
+flow_data
 # _______________
 # Example 1: counting the number of values with flow > 600 and month ==7
 # Note we are doing this by asking for the rows where the flow column (i.e. Flow_data[:,3]) is >600
@@ -118,5 +115,3 @@ flow_quants2 = np.quantile(flow_data, q=[0,0.1, 0.5, 0.9], axis=0)
 #note flow_quants2 has 4 columns just like our data so we need to say flow_quants2[:,3]
 # to extract the flow quantiles for our flow data. 
 print('Method two flow quantiles:', flow_quants2[:,3]) 
-
-# %%

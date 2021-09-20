@@ -1,4 +1,9 @@
-# Start code for assignment 3
+# Assignment_3: Lists
+#Jason Schlottman
+#Date: 9/07/2021
+
+# > HW3 file based on the provided 'Starter code for assignment 3' supplied by Dr. Condon:
+
 # this code sets up the lists you will need for your homework
 # and provides some examples of operations that will be helpful to you
 
@@ -64,13 +69,16 @@ ilist = []
 # Loop over the length of the flow list
 # and adding the index value to the ilist
 # if it meets some criteria that I specify
+
+#Temporarily 'commented out':
+
 for i in range(len(flow)):
-        if flow [i] > 600 and month[i] == 7:
+        if flow [i] > 0 and month[i] == 9:
                 ilist.append(i)
 
 # see how many times the criteria was met by checking the length
 # of the index list that was generated
-print(len(ilist))
+print(ilist)
 
 # Grabbing out the data that met the criteria
 # This  subset of data is just the elements identified
@@ -79,7 +87,23 @@ subset = [flow[j] for j in ilist]
 
 # Alternatively I could have  written the for loop I used
 # above to  create ilist like this
-ilist2 = [i for i in range(len(flow)) if flow[i] > 600 and month[i]==7]
+ilist2 = [i for i in range(len(flow)) if flow[i] > 105 and year[i]>=2010]
 print(len(ilist2))
 
 
+#if month == 9:
+#        print(len(flow))
+
+#print(type(flow))
+#print(type(year))
+#print(type(month))
+#print(type(day))
+
+#print(len(flow))
+#print(len(year))
+#print(len(month))
+#print(len(day))
+
+#if month == 9:
+#        print(flow) 
+# %%
