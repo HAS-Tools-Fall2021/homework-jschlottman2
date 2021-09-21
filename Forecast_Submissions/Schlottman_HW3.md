@@ -3,22 +3,12 @@
 ## Week3 - 9/07/2021
 ### *Schlottman_HW3.md*
 ### Assignment Summary:
-To make reasonable forecast estimates I made changes to the provided .py starter code and simply changed elements within the for loop in order to impose conditions to meet the criteria of each question.. I also utilized Conditional statements and functions such as the len() to measure values and boolean expressions to note the analysis period and flow intensity. This is how I formed estimates for my 1 and 2-week predictions for the forecasting of the stream discharge values in cubic feet per second (cfs).
+ #To make reasonable forecast estimates I made changes to the provided .py starter code and simply changed elements within the for loop in order to impose conditions to meet the criteria of each question. I also utilized Conditional statements and functions such as the len() to measure values and boolean expressions to note the analysis period and flow intensity. This is how I formed estimates for my 1 and 2-week predictions for the forecasting of the stream discharge values in cubic feet per second (cfs).
 
 ### Assignment Questions:
 > #1. Describe the variables flow, year, month, and day. What type of objects are they? What data types are they composed of? How long are they?
 
-<<<<<<< HEAD
-flow, year, month and day are variables within the list created in the starter code. All are known as the object type called "numbers" where flow is a float, and year, month, and day are integers. All have a length of 11,945 values. All have data types of list.
-=======
-## Grade
-**1/3: It looks liek you are missing answers to all the quantitaive questions and I don't see a python script submitted here. I will give you one more extension until this Friday to get this one completed make sure you come see me if you have questions. Also see my comments on assignment 4 for additional notes on what I'm looking for. 
-_______
-
-
-To make reasonable forecast estimates I made changes to the provided .py starter code and simply added elements to the lists found in the code in order to return values and make comparable estimates for my 1 and 2 week predictions for the forecasting of the stream discharge values in cubic feet per second (cfs).
-Note: only the variables: "min,max,mean, std. dev" were calculated for the sake of simplicity.
->>>>>>> master
+ #flow, year, month and day are variables within the list created in the starter code. All are known as the object type called "numbers" where flow is a float, and year, month, and day are integers. All have a length of 11,945 values. All have data types of list.
 
 > #2. How many times was the daily flow greater than your prediction in the month of September (express your answer in terms of the total number of times and as a percentage)?
 
