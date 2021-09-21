@@ -85,12 +85,6 @@ print(ilist)
 # in the ilist
 subset = [flow[j] for j in ilist]
 
-# Alternatively I could have  written the for loop I used
-# above to  create ilist like this
-ilist2 = [i for i in range(len(flow)) if flow[i] > 105 and year[i]>=2010]
-print(len(ilist2))
-
-
 #if month == 9:
 #        print(len(flow))
 

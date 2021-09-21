@@ -108,12 +108,9 @@ plt.ylabel('Count')
 flow_quants1 = np.quantile(flow_data[:,3], q=[0,0.1, 0.5, 0.9])
 print('Method one flow quantiles:', flow_quants1)
 
-# 4.b  use the axis=0 argument to indicate that you would like the funciton 
-# applied along columns. In this case you will get quantlies for every column of the 
-# data automatically 
+
 flow_quants2 = np.quantile(flow_data, q=[0,0.1, 0.5, 0.9], axis=0)
-#note flow_quants2 has 4 columns just like our data so we need to say flow_quants2[:,3]
-# to extract the flow quantiles for our flow data. 
+
 print('Method two flow quantiles:', flow_quants2[0:,3]) 
 
 # %%

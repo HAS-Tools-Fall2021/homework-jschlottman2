@@ -8,7 +8,8 @@
 
 ## Questions:
 > 1. Provide a summary of the forecast values you picked and why. Include discussion of the quantitative analysis that lead to your prediction. This can include any analysis you complete but must include at least two histograms and some quantitative discussion of flow quantiles that helped you make your decision.
-#The forecast predictions were chosen based on a number of inputs to help estimate a reasonable flow in cfs. To start, we can observe the flow on a histogram and observe the mean and median flow, which helps provide an estimate of potential reasonable vakues that will fall within the range of true flow as it varies over the period. The mean value was over 400 cfs which is a little too large to be realistic in my opinion so i tended to favor the median estimate. The median flow rate was about 160 cfs when observing the flow for only the month of september in the year 2021 for all existing data. I scaled this down a bit for realism due to the end of the summer monsoons likely resulting in a decrease in flow over time eventually.  
+
+ #The forecast predictions were chosen based on a number of inputs to help estimate a reasonable flow in cfs. To start, we can observe the flow on a histogram and observe the mean and median flow, which helps provide an estimate of potential reasonable vakues that will fall within the range of true flow as it varies over the period. The mean value was over 400 cfs which is a little too large to be realistic in my opinion so i tended to favor the median estimate. The median flow rate was about 160 cfs when observing the flow for only the month of september in the year 2021 for all existing data. I scaled this down a bit for realism due to the end of the summer monsoons likely resulting in a decrease in flow over time eventually.  
 
 > 2. Describe the variable flow_data:
   - What is it?
