@@ -2,6 +2,12 @@
 ## Jason Schlottman
 ## Week3 - 9/07/2021
 ### *Schlottman_HW3.md*
+
+____________
+## Grade
+3/3 - Great job! 
+____________
+
 ### Assignment Summary:
  #To make reasonable forecast estimates I made changes to the provided .py starter code and simply changed elements within the for loop in order to impose conditions to meet the criteria of each question. I also utilized Conditional statements and functions such as the len() to measure values and boolean expressions to note the analysis period and flow intensity. This is how I formed estimates for my 1 and 2-week predictions for the forecasting of the stream discharge values in cubic feet per second (cfs).
 

@@ -2,6 +2,11 @@
 ## **Jason Schlottman**
 ## Week 4 - 9/19/2021
 ## *Schlottman_HW4.md*
+____________
+## Grade
+3/3 - Great job!  You are all caught up!!
+Next time just make sure you preview your markdown formatting some of it didn't come through quite right. 
+____________
 
 ### Assignment Summary:
 #This week the basis for analyzing the streamflow data relies on utilizing data in the provided starter python code by using numpy arrayse edited to meet the conditions set in place with estimates returned using the numpy array to calculate the values and perform  operations in order to form my estimate for the 1 and 2-week streamflow forecast values representing this week's  predicted streamflow (cfs).
