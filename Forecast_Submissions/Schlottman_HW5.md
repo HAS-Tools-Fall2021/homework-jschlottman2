@@ -3,6 +3,10 @@
 ## Week 5 - 9/27/2021
 ## *Schlottman_HW5.md*
 
+____
+## Grade
+3/3: Really nice wok and nice job with the markdown formatting. Check my solution for #5 this was a tricky one. 
+
 ### Assignment Summary:
 > #This week the basis for analyzing the streamflow data relies on utilizing the provided starter code and depending on using Pandas Dataframes with regards to the outlined conditions in order to form reasonable estimates for the 1-week and 2-week predicted streamflow forecast values in cubic feet per second (cfs). The PandasDataframe is a useful tool alongside the defined functions which returns
 
