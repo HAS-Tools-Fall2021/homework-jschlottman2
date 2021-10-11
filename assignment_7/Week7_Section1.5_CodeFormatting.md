@@ -61,7 +61,7 @@ ___
    - [Lesson 3](https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/functions-modular-code/write-functions-with-multiple-and-optional-parameters-in-python/): Writing multi-parameter functions
 ___
 ## Assignment 7: Making our scripts nice!
-This week we will be working from the script you will be combining what you have done in the pervious assignment to writing a clean scirpt that someone else can run to generate a forecast that they will submit on your behalf. Note that you will not be submitted a md written assignment this week. Your written assignment will be the code review you complete in Part 2 of the assignment.
+This week you will be combining what you have done in the pervious assignment to writing a clean scirpt that someone else can run to generate a forecast that they will submit on your behalf. Note that you will not be submitted a md written assignment this week. Your written assignment will be the code review you complete in Part 2 of the assignment and the md file you create for your partner.
 
 #### Forecast Rules for this week:
 - You must use the pandas dataframe *data* created as the basis for your analysis.
@@ -123,7 +123,6 @@ For the second part of this assignment you will be working in your partners repo
 ___
 ## Code Review Partners
 ![picture 1](./assets/week7_reviewpartners.png)  
-
 ___
 ## Cheat Sheet Assignment 3: Numpy
 1. Create a cheet sheet on Numpy basics that covers the following: 
