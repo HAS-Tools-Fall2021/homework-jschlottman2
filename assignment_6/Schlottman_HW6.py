@@ -6,7 +6,7 @@
 #Date: 10/04/2021
 
 
-#The code below is a modified version based on the provided starter code developed by Dr. Laura Condon
+#The code below is a modified version based on the provided starter_code developed by Dr. Laura Condon
 # %%
 # Import modules:
 import os
@@ -39,105 +39,71 @@ data['day'] = pd.DatetimeIndex(data['datetime']).day
 data['dayofweek'] = pd.DatetimeIndex(data['datetime']).dayofweek
 
 # %% 
-# Example Plots:
+#Plots:
 
-# 1. Timeseries of observed weekly flow values
+# 1. Observed Daily Flow from 2010 to 2020
 fig, ax = plt.subplots()
-ax.plot(data['datetime'], data['flow'], color='green',
-        linestyle='dashed', label='daily')
-ax.set(title="Observed Flow", xlabel="Date", 
-        ylabel="Daily Avg Flow [cfs]",
-        yscale='log')
-ax.legend()
-# an example of saving your figure to a file
-fig.set_size_inches(5,3)
-fig.savefig("Observed_Flow.png")
-
-
-#2. Time series of flow values with the x axis range limited
-fig, ax = plt.subplots()
-ax.plot(data['datetime'], data['flow'], label='flow')
-ax.set(title="Observed Flow", xlabel="Date", ylabel="Weekly Avg Flow [cfs]",
-        yscale='log', xlim=[datetime.date(2000, 1, 26), datetime.date(2014, 2, 1)])
-ax.legend()
+ax.plot(data['datetime'], data['flow'], color='orange')
+ax.set(title="A Decade of Observed Flow", xlabel="Date", 
+        ylabel="Daily Average Flow [cfs]", yscale='log',
+        xlim=[datetime.date(2010, 1, 1),
+        datetime.date(2020, 12, 21)])
 plt.show()
 
-
-#3 Boxplot of flows by month 
+ #2. Bar plot displaying flow for the 2nd half of July, a common 'heavy-flow' monsoon period.
 fig, ax = plt.subplots()
-ax = sns.boxplot(x="month", y="flow",  data=data,
-                 linewidth=0.3)
-ax.set(yscale='log')
-# Here i'm separating out the x lable and ylable setting just as an illustration
-# They also could have been included in the ax.set command above
-ax.set_xlabel('Forecast Week')
-ax.set_ylabel('Flow (cfs)')
+ax.bar(data['datetime'], data['flow'])
+ax.set(title='Flow for 2nd Half of July, 2020', xlabel="Date",
+        ylabel="Observed Flow (cfs)", 
+        xlim=[datetime.date(2020, 7, 15), datetime.date(2020, 7, 31)],
+        ylim=[110, 220])
 plt.show()
 
+#3 Boxplot of flows since 2000 from November 1-10: 
+mon_time = data[(data['month'] == 11) & (data['year'] >=2000)]
+mon_days = mon_time[(mon_time['day'] >=1) & (mon_time['day'] <=10)]
 
-# 4. Plot the september flows for the last 10 years
-#making a color palette to use for plotting (using the viridis one here with 12 colors)
-mypal = sns.color_palette('viridis', 12)
+fig, ax = plt.subplots()
+ax= sns.boxplot(x=mon_days['day'], y='flow', data=data, linewidth=0.5, color='teal')
+ax.set(xlabel='Days of November', ylabel='Observed Flow (cfs)', yscale='log')
+plt.show()
+
+# 4. Line plot which displays December flows from 2000-2010 to show Winter Rains with plasma color palette.
+mypal = sns.color_palette('plasma', 12)
 mypal
-colpick = 0
+col = 0
 fig, ax = plt.subplots()
-for i in range(2010, 2022):
-        plot_data=data[(data['year']==i) & (data['month']==9)]
+for i in range(2000, 2010):
+        plot_data=data[(data['year']==i) & (data['month']==12)]
         ax.plot(plot_data['day'], plot_data['flow'],
-                color=mypal[colpick], label=i)
-        ax.set(yscale='log')
-        ax.legend()
-        colpick = colpick+1
+                color=mypal[col], label=i)
+        ax.set(xlabel='Day', ylabel='Observed Flow (cfs)', yscale='log')
+        col = col+1
 
-#5. scatterplot this years flow vs last years flow for september
-fig, ax = plt.subplots()
-
-ax.scatter(data[(data['year'] == 2019) & (data['month'] == 9)].flow,  data[(data['year'] == 2020) & (data['month'] == 9)].flow, marker='p',
-           color='blueviolet')
-ax.set(xlabel='2019 flow', ylabel='2020 flow', yscale='log', xscale='log')
-ax.legend()
-
-# 6. Scatter plot of flow vs day of the month for september
-# Dots are colored by the year and sized acccording to the flow
-sept_data = data[data['month']==9] #grabbing just september flows for plotting
-fig, ax = plt.subplots()
-ax.scatter(sept_data['day'], sept_data['flow'], alpha=0.2,
-            s=0.02*sept_data['flow'], c=sept_data['year'], cmap='viridis')
-ax.set(yscale='log')
-ax.set_xlabel('Day of the month')
-ax.set_ylabel('Flow')
-plt.show()
-
-#7. Multipanel plot histograms of flow for September and October
+#5. Scatter plot for flow in July and December for events from 1990-2021.
 fig, ax = plt.subplots(1,2)
-
-m = 9
-month_data = data[data['month'] == m]
-plot_title = 'Month ' + str(m)
-ax[0].hist(np.log10(month_data['flow']), bins=30, edgecolor='grey', color='steelblue')
-ax[0].set(xlabel='Log Flow cfs', ylabel='count', title=plot_title)
-
-m=10
-month_data = data[data['month'] == m]
-plot_title = 'Month ' + str(m)
-ax[1].hist(np.log10(month_data['flow']), bins=30,
-           edgecolor='grey', color='steelblue')
-ax[1].set(xlabel='Log Flow cfs', ylabel='count', title= plot_title)
+jul = data[data['month']==7]
+ax[0].scatter(jul['day'], jul['flow'], alpha=0.8,
+            s=0.02*jul['flow'], c=jul['year'], cmap='magma')
+ax[0].set(yscale='log', xlabel='Day_July', ylabel='Observed Flow (cfs)')
+Dec = data[data['month']==12]
+ax[1].scatter(Dec['day'], Dec['flow'], alpha=0.8,
+            s=0.02*Dec['flow'], c=Dec['year'], cmap='magma')
+ax[1].set(yscale='log', xlabel='Day_December')
 plt.show()
 
-#8. Same as 7 but using a for loop to do all 12 months
-fig, ax = plt.subplots(2, 2)
-ax= ax.flatten()  #so that we can refer to plots as ax[0]...ax[3] rather than ax[0,0]..ax[1,1]
-axi = 0
-for m in range(9,13):
-        month_data = data[data['month'] == 1]
-        plot_title = 'Month ' + str(m)
-        ax[axi].hist(np.log10(month_data['flow']), bins=30,
-           edgecolor='grey', color='steelblue')
-        ax[axi].set(xlabel='Log Flow cfs', ylabel='count', title=plot_title)
-        axi=axi+1
+#6. Histograms for flow from July 1-15 and July 16-31
+
+fig, ax = plt.subplots(1,2)
+m = 10
+mon_data = data[(data['month'] == m) & (data['day'] >= 1) & (data['day'] <= 15)]
+ax[0].hist(np.log10(mon_data['flow']), bins=50, color='indigo')
+ax[0].set(xlim=[1.75, 2.75], xlabel='Log_Observed_Flow cfs', ylabel='total', title='Flow for July 1st Half')
+
+mon_data = data[(data['month'] == m) & (data['day'] >= 16) & (data['day'] <= 31)]
+ax[1].hist(np.log10(mon_data['flow']), bins=30,
+           color='red')
+ax[1].set(xlabel='Log_Observed_Flow (cfs)', title='Flow for July 2nd Half')
 plt.show()
-
-
 
 # %%
