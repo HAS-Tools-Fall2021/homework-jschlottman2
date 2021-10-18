@@ -30,5 +30,5 @@ data['month'] = data['month'].astype(int)
 data['day'] = data['day'].astype(int)
 
 # %%
-# Sorry no more helpers past here this week, you are on your own now :)
-# Hints - you will need the functions: describe, info, groupby, sort, head and tail.
+
+data.info()

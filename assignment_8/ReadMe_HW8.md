@@ -15,7 +15,7 @@
 
 ### Section 2: Run step_2 to create the pandas_dataframe which calls all necessary variables
 
-### Section 3: Run step_3 to return common calculations of the streamflow data which includes 'mean, median, std. deviation, quartiles' to gain a quantitative insight into actual streamflow conditions over time for the site.
+### Section 3: Run step_3 to return the "Prints" which display common calculations of the streamflow data which includes 'mean, median, std. deviation, quartiles' to gain a quantitative insight into actual streamflow conditions over time for the site.
 
 ### *AnswerPrints:* " "
 

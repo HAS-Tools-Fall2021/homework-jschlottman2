@@ -14,9 +14,9 @@
 
 ### Section 2: Run step_2 to create the pandas_dataframe which calls all necessary variables
 
-### Section 3: Run step_3 to return common calculations of the streamflow data which includes 'mean, median, std. deviation, quartiles' to gain a quantitative insight into actual streamflow conditions over time for the site.
+### Section 3: Run step_3 to return "Prints" which display common calculations of the streamflow data which includes 'mean, median, std. deviation, quartiles' to gain a quantitative insight into actual streamflow conditions over time for the site.
 
-### *AnswerCalcs:* " "
+### *AnswerPrints:* " "
 
 ### Section 4: The 'pandas_dataframe' - referenced variables are called in various conditional statements & functions to create 3 unique plots. (Ensure 'Markdown Image' for "VSCode" or 'markdown-image-assistant' for Atom text editors are installed in order to view plots!).
 
