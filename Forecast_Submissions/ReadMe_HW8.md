@@ -1,4 +1,18 @@
 
+____________
+## Grade:
+### 1. Forecast Submision: 
+**1/3:** I don't see answers to questions 1-3 here and  I don't see any of your graphs. Also the formatting makes it really hard to follow. Please make sure you preview your markdown before submitting and come ask me if you have any quesitons. 
+
+### 2. Graded Script
+Refer to [the rubric](https://github.com/HAS-Tools-Fall2021/Course-Materials21/blob/main/Content/Starter_Codes/week7_code_review_rubric.md) for details on scoring: 
+- **Readability:2.5/3** Good start on the doc strings but you are missing an overall description and you ahve not included variable types. 
+- **Style:3/3**
+- **Code:1.5/3**  Good start but you are missing a couple of key elements.  I don't see any inclusion of expanded date time functionality. Also your function is not working due to the extra `{}` around it and I never see it being called in your script. 
+____________
+
+
+
 # Instructions for running the revised version of the  'Code_Review' assignment are outlined in the text below:
 
 ## Refer to these directions to run the 'Schlottman_HW8.py' script while following along with the pseudocode to understand what each section returns. Follow directions and make sure to enter answer responses for the Prints, Plots, & Forecasts in the provided blank spaces after each italicized header entitled "### *AnswerX:* " ". Good luck!

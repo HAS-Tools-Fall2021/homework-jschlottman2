@@ -3,6 +3,9 @@
 ## Week 6 - 10/04/2021
 ## *Schlottman_HW6.md*
 
+## Grade: 
+2.5/3: Good work on the plots. you  need to includ a summary of your forecast values and how you arrived at them though too. 
+
 ### Assignment Summary:
 #This week the basis for analyzing the streamflow data relies on utilizing the provided starter code while depending on matplotlib functions to perform any operations in order to return reasonable forecast estimate values representing this week's predicted 1-week and 2-week streamflow (cfs).
 
