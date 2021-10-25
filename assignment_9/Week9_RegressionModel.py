@@ -8,15 +8,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import datetime
-# Note you will need to open a terminal window and type: 'pip install for sklearn' to install the package 
-# The first time you use it
+# Initial step run 'pip install for sklearn' to install the package 
 
 # %%
-filename = 'streamflow_week2.txt'
-filepath = os.path.join('../data', filename)
+filename = 'streamflow_week7.txt'
+filepath = os.path.join('data', filename)
 print(os.getcwd())
 print(filepath)
 
+filepath = '../data/streamflow_week7.txt'
 #Read the data into a pandas dataframe
 data = pd.read_table(filepath, sep='\t', skiprows=30,
                      names=['agency_cd', 'site_no',

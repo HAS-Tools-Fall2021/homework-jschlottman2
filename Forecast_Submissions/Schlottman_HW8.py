@@ -95,11 +95,12 @@ f_1wk = data["flow"].mean()
 
 f_2wk = data["flow"].mean() *0.8 
 
-f_1wk
-f_2wk
+
 
 {
 def fcast(f_1wk, f_2wk):
+    f_1wk=f_1wk
+    f_2wk=f_2wk
 '''
 #Parameters:
 f_1wk= estimated 1-week forecast value.
@@ -107,8 +108,8 @@ f_2wk= estimated 2-week forecast value.
 
 #Returns: Running this function returns two seperate integers which represent the 1-week and 2-week streamflow estimate values in cfs.
 '''
-        print("My 1-week forecast is ", f_1wk, "cfs.")
-        print("My 2-week forecast is ", f_2wk, "cfs.")
+print("My 1-week forecast is", f_1wk, "cfs.")
+print("My 2-week forecast is", f_2wk, "cfs.")
 }
 
 # %%

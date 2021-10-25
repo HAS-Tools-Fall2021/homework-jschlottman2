@@ -1,4 +1,11 @@
+#Assignmnent_9
+#By: Jason Schlottman 
+#Week9: API Utilized to source data
+#Course: HAS Tools: Tools for Data Handling and Analysis in Water, Weather, & Climate
+#Date: 10/19/2021
+
 # %%
+# Code below imports necessary packages:
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,14 +15,8 @@ import json
 import urllib.request as req
 import urllib
 
-
 # %%
-# Mesonet Example - 
-#Here are some helpful links for getting started
-#https: // developers.synopticdata.com/about/station-variables/
-#https: // developers.synopticdata.com/mesonet/explorer/
-
-# First Create the URL for the rest API
+# Create URL for the rest API here:
 # Insert your token here
 mytoken = ''
 
@@ -84,9 +85,9 @@ data_daily = data.resample('D').mean()
 # %%
 # Daymet Example:
 # You can get Daymet data for a single pixle form this site:
-#https: // daymet.ornl.gov/single-pixel/ 
+#https://daymet.ornl.gov/single-pixel/ 
 # You can also experiment with their API Here: 
-# https: // daymet.ornl.gov/single-pixel/api  
+# https://daymet.ornl.gov/single-pixel/api  
 
 # Example reading it as a json file
 url = "https://daymet.ornl.gov/single-pixel/api/data?lat=34.9455&lon=-113.2549"  \
@@ -109,3 +110,5 @@ url = "https://daymet.ornl.gov/single-pixel/api/data?lat=34.9455&lon=-113.2549" 
        "&vars=prcp&years=&format=csv"
 data = pd.read_table(url, delimiter=',', skiprows=6)
 
+
+# %%
