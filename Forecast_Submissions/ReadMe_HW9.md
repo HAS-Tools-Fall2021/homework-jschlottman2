@@ -3,6 +3,14 @@
 ## Week 9 - 10/25/2021
 ## *ReadMe_HW9.md*
 
+____________
+## Grade:
+**0.5/3:** This is a start however I subtracted points for the following: 
+    - It looks like you have just downloaded the data provided in the starter code. I don't see where you have done your own dataset? 
+    - I don't see any graphs here or in your python script. Your python script appears to just be a copy paste from the starter code. I don't see your work here. 
+    - You are not using markdown formatting correctly and its hard to follow your answers. 
+____________
+
 ### Assignment Summary:
 This week's forecast vales rely on calling the data from a different source than previous weeks where the discharge values were simply downloaded from the USGS streamguage data provided online which could be downloaded as a '.txt.' file. For this assignment I have utilized an API to call in the streamflow data from an alternative site to the USGS database such as DayMet, or MesoNet's portal for a different site than usual, this time located at in Arizona where daily discharge in cfs is available for the station.
 
